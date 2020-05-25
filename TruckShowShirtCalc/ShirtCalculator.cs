@@ -20,8 +20,7 @@ namespace TruckShowShirtCalc
         private void Button1_Click(object sender, EventArgs e)
         {
             textBox2.Clear();
-            double oldShirts = 5.00;
-            double newShirts = 10.00;
+            double shirts = 10.00;
             double shipping = 5.00;
             double quantity = Convert.ToDouble(textBox1.Text);
             double sum;
@@ -31,12 +30,12 @@ namespace TruckShowShirtCalc
             {
                 if (checkBox1.Checked == true)
                 {
-                    sum = oldShirts * quantity + shipping;
+                    sum = shirts * quantity + shipping;
                     textBox2.Text = sum.ToString("0.00");
                 }
                 else
                 {
-                    sum = oldShirts * quantity;
+                    sum = shirts * quantity;
                     textBox2.Text = sum.ToString("0.00");
                 }
             }
@@ -45,12 +44,12 @@ namespace TruckShowShirtCalc
             {
                 if (checkBox1.Checked == true)
                 {
-                    sum = oldShirts * quantity + shipping;
+                    sum = shirts * quantity + shipping;
                     textBox2.Text = sum.ToString("0.00");
                 }
                 else
                 {
-                    sum = oldShirts * quantity;
+                    sum = shirts * quantity;
                     textBox2.Text = sum.ToString("0.00");
                 }
             }
@@ -59,12 +58,12 @@ namespace TruckShowShirtCalc
             {
                 if (checkBox1.Checked == true)
                 {
-                    sum = oldShirts * quantity + shipping;
+                    sum = shirts * quantity + shipping;
                     textBox2.Text = sum.ToString("0.00");
                 }
                 else
                 {
-                    sum = oldShirts * quantity;
+                    sum = shirts * quantity;
                     textBox2.Text = sum.ToString("0.00");
                 }
             }
@@ -73,12 +72,12 @@ namespace TruckShowShirtCalc
             {
                 if (checkBox1.Checked == true)
                 {
-                    sum = newShirts * quantity + shipping;
+                    sum = shirts * quantity + shipping;
                     textBox2.Text = sum.ToString("0.00");
                 }
                 else
                 {
-                    sum = newShirts * quantity;
+                    sum = shirts * quantity;
                     textBox2.Text = sum.ToString("0.00");
                 }
             }
